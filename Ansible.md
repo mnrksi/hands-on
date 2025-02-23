@@ -28,7 +28,11 @@ ansible --version
   vim inventory/hosts  
   ```text:hands-on-01/hosts
   [client_node]
-Clinet01 ansible_ssh_host=57.180.44.225
+Clinet01 ansible_ssh_host=57.xxx.xxx.xxx
+Clinet02 ansible_ssh_host=57.xxx.xxx.xxx
+Clinet03 ansible_ssh_host=57.xxx.xxx.xxx
+Clinet04 ansible_ssh_host=57.xxx.xxx.xxx
+Clinet05 ansible_ssh_host=57.xxx.xxx.xxx
 
 [client_node:vars]
 ansible_ssh_user=ubuntu
