@@ -67,6 +67,12 @@ ansible_ssh_private_key_file=/home/ubuntu/.ssh/mnr_key.pem
 
 - name: upgrade all packages
   command: apt-get upgrade -y
+
+- name: change time zone
+  command: timedatectl set-timezone Asia/Tokyo
+
+- name: evidence
+  shell: date > /home/evidence.txt
   ```
   mkdir -p roles/hands-on/handlers  
   vim roles/hands-on/handlers/main.yml  
